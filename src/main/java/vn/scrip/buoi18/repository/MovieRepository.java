@@ -53,6 +53,6 @@ public interface MovieRepository extends JpaRepository<Movie, Long> {
 
     @Query(value = "select * from movies where status = ?1 order by rating desc limit ?2", nativeQuery = true)
     List<Movie> findHotMovie(Boolean status, Integer limit);
-
     Movie findByIdAndSlugAndStatus(Integer id, String slug, boolean b);
 }
+

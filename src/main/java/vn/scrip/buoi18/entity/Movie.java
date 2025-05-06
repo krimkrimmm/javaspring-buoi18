@@ -1,12 +1,10 @@
 package vn.scrip.buoi18.entity;
-
 import vn.scrip.buoi18.model.enums.MovieType;
 import jakarta.persistence.*;
 import lombok.*;
-
 import java.time.LocalDateTime;
-
 @ToString
+
 @Builder
 @Getter
 @Setter
@@ -16,6 +14,7 @@ import java.time.LocalDateTime;
 @Table(name = "movies")
 public class Movie {
     @Id
+
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
@@ -23,7 +22,6 @@ public class Movie {
     private String name;
 
     private String slug;
-
     @Column(columnDefinition = "TEXT")
     private String description;
 
@@ -34,7 +32,6 @@ public class Movie {
 
     @Column(columnDefinition = "double default 5.0")
     private Double rating;
-
     @Enumerated(EnumType.STRING)
     private MovieType type;
 

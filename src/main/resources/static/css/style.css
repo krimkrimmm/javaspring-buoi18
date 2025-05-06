@@ -1,30 +1,53 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-img {
-    max-width: 100%;
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-align: center;
 }
 
-.navbar-brand img {
-    width: 150px;
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
 }
 
-.movie-poster {
-    height: 250px;
+.movie-card {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
 }
 
-.movie-poster img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+.movie-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
 }
 
-.review-author-avatar img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
+.movie-card p {
+    font-size: 14px;
+    color: #666;
+    height: 60px;
+    overflow: hidden;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.pagination a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.pagination a:hover {
+    text-decoration: underline;
 }

@@ -1,6 +1,5 @@
 //Yêu cầu
 //Học viên hiển thị danh sách phim + phân trang:
-//
 //Danh sách phim lẻ
 //Danh sách phim bộ
 //Danh sách phim chiếu rạp
@@ -15,11 +14,6 @@ public class Buoi18Application
 		SpringApplication.run(Buoi18Application.class, args);
 	}
 }
-
-
-
-
-
 
 
 
